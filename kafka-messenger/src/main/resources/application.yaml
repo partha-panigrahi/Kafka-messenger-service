@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: kafka-messenger
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+    consumer:
+      group-id: console-consumer-36347
+
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+      auto-offset-reset: earliest
